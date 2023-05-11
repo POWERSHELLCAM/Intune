@@ -1,0 +1,214 @@
+{
+   "Rules":[ 
+      { 
+         "SettingName":"MECM Agent",
+         "Operator":"IsEquals",
+         "DataType":"String",
+         "Operand":"Healthy",
+         "MoreInfoUrl":"https://powerofpowershell.com",
+         "RemediationStrings":[ 
+            { 
+               "Language":"en_US",
+               "Title":"Unhealthy MECM agent",
+               "Description": "Ether MECM agent is not installed or state is unhealthy"
+            }
+         ]
+      }
+          ],
+   "Rules":[ 
+      { 
+         "SettingName":"Sync Service",
+         "Operator":"IsEquals",
+         "DataType":"String",
+         "Operand":"Automatic",
+         "MoreInfoUrl":"https://powerofpowershell.com",
+         "RemediationStrings":[ 
+            { 
+               "Language":"en_US",
+               "Title":"sync issue ",
+               "Description": "dmwappushservice is not set to automatic"
+            }
+         ]
+      }
+          ],
+   "Rules":[ 
+      { 
+         "SettingName":"TPM Chip Present",
+         "Operator":"IsEquals",
+         "DataType":"String",
+         "Operand":"Present",
+         "MoreInfoUrl":"https://powerofpowershell.com",
+         "RemediationStrings":[ 
+            { 
+               "Language":"en_US",
+               "Title":"TPM absent",
+               "Description": "Add TPM hardware."
+            }
+         ]
+      }
+          ],
+   "Rules":[ 
+      { 
+         "SettingName":"Firmware Type",
+         "Operator":"IsEquals",
+         "DataType":"String",
+         "Operand":"EUFI",
+         "MoreInfoUrl":"https://powerofpowershell.com",
+         "RemediationStrings":[ 
+            { 
+               "Language":"en_US",
+               "Title":"Legacy BIOS Mode",
+               "Description": "Enable EUFI."
+            }
+         ]
+      }
+          ],
+
+   "Rules":[ 
+      { 
+         "SettingName":"SecureBoot",
+         "Operator":"IsEquals",
+         "DataType":"String",
+         "Operand":"Enabled",
+         "MoreInfoUrl":"https://powerofpowershell.com",
+         "RemediationStrings":[ 
+            { 
+               "Language":"en_US",
+               "Title":"Secure Boot not enabled",
+               "Description": "Please enable secure boot."
+            }
+         ]
+      }
+          ],
+    "Rules":[ 
+         { 
+            "SettingName":"OSDisk Free Space",
+            "Operator":"GreaterEquals",
+            "DataType":"Int64",
+            "Operand":"50",
+            "MoreInfoUrl":"https://powerofpowershell.com",
+            "RemediationStrings":[ 
+               { 
+                  "Language":"en_US",
+                  "Title":"Space must be more than 50GB",
+                  "Description": "Please perform disk clean to free up some space."
+               }
+            ]
+         }
+             ],
+             "Rules":[ 
+                { 
+                   "SettingName":"Physical Memory(GB)",
+                   "Operator":"GreaterEquals",
+                   "DataType":"Int64",
+                   "Operand":"2",
+                   "MoreInfoUrl":"https://powerofpowershell.com",
+                   "RemediationStrings":[ 
+                      { 
+                         "Language":"en_US",
+                         "Title":"Memroy is less than 2GB",
+                         "Description": "Please install more memories."
+                      }
+                   ]
+                }
+                    ],
+             "Rules":[ 
+                { 
+                   "SettingName":"Pending Update",
+                   "Operator":"IsEquals",
+                   "DataType":"String",
+                   "Operand":"No",
+                   "MoreInfoUrl":"https://powerofpowershell.com",
+                   "RemediationStrings":[ 
+                      { 
+                         "Language":"en_US",
+                         "Title":"Pending update/s to be installed",
+                         "Description": "Please install pending updates."
+                      }
+                   ]
+                }
+                    ]
+       ,
+          "Rules":[ 
+                { 
+                   "SettingName":"License Status",
+                   "Operator":"IsEquals",
+                   "DataType":"String",
+                   "Operand":"Activated",
+                   "MoreInfoUrl":"https://powerofpowershell.com",
+                   "RemediationStrings":[ 
+                      { 
+                         "Language":"en_US",
+                         "Title":"Windows is not activated",
+                         "Description": "Please activate window."
+                      }
+                   ]
+                }
+                    ],
+                    "Rules":[ 
+                          { 
+                             "SettingName":"Antivirus Presence",
+                             "Operator":"IsEquals",
+                             "DataType":"String",
+                             "Operand":"Yes",
+                             "MoreInfoUrl":"https://powerofpowershell.com",
+                             "RemediationStrings":[ 
+                                { 
+                                   "Language":"en_US",
+                                   "Title":"Antivirus software not present",
+                                   "Description": "Please install Antivirus software."
+                                }
+                             ]
+                          }
+                              ],
+ 
+                              "Rules":[ 
+                                    { 
+                                       "SettingName":"Encryption State",
+                                       "Operator":"IsEquals",
+                                       "DataType":"String",
+                                       "Operand":"FullyEncrypted",
+                                       "MoreInfoUrl":"https://powerofpowershell.com",
+                                       "RemediationStrings":[ 
+                                          { 
+                                             "Language":"en_US",
+                                             "Title":"Device not encrypted",
+                                             "Description": "Please check bitlocker settings."
+                                          }
+                                       ]
+                                    }
+                                        ],
+                                        "Rules":[ 
+                                           { 
+                                              "SettingName":"Tanium",
+                                              "Operator":"IsEquals",
+                                              "DataType":"String",
+                                              "Operand":"Present",
+                                              "MoreInfoUrl":"https://powerofpowershell.com",
+                                              "RemediationStrings":[ 
+                                                 { 
+                                                    "Language":"en_US",
+                                                    "Title":"Tanium clinet not installed",
+                                                    "Description": "Please install Tanium clinet."
+                                                 }
+                                              ]
+                                           }
+                                               ],
+                                               "Rules":[ 
+                                                  { 
+                                                     "SettingName":"Zscaler",
+                                                     "Operator":"IsEquals",
+                                                     "DataType":"String",
+                                                     "Operand":"Present",
+                                                     "MoreInfoUrl":"https://powerofpowershell.com",
+                                                     "RemediationStrings":[ 
+                                                        { 
+                                                           "Language":"en_US",
+                                                           "Title":"Zscaler not installed",
+                                                           "Description": "Please install Zscaler."
+                                                        }
+                                                     ]
+                                                  }
+                                                      ]
+       
+ }
